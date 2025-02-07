@@ -94,3 +94,46 @@ WHERE EmpName BETWEEN 'Alice Johnson' AND 'Henry Wilson'
 ORDER BY EmpName;
 
 
+SELECT * FROM employee
+WHERE City LIKE 'A%';
+
+SELECT * FROM employee
+WHERE EmpName LIKE 'J%';
+
+SELECT * FROM employee
+WHERE EmpName LIKE '_e%';
+
+SELECT * FROM employee
+WHERE EmpName NOT LIKE 'E%' AND EmpName NOT LIKE 'T%';
+
+SELECT MAX(Salary) AS Result
+FROM employee;
+
+SELECT * FROM employee;
+
+SELECT MIN(Salary) AS Result
+FROM employee;
+
+
+SELECT SUM(Salary)
+FROM employee;
+
+SELECT SUM(Salary)
+FROM employee 
+WHERE Salary >= 70000;
+
+SELECT * FROM employee;
+
+SELECT AVG(Salary) AS AVG_SALARY
+FROM employee;
+
+SELECT AVG(Salary) AS AVG_SALARY
+FROM employee WHERE Salary >= 80000;
+
+SELECT COUNT(EmpName) FROM employee;
+
+SELECT COUNT(EmpName) FROM employee
+WHERE Salary >= 80000;
+
+SELECT COUNT(*)
+FROM employee;
